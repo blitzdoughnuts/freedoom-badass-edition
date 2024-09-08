@@ -1,0 +1,334 @@
+actor Cocaine : Berserk replaces Berserk
+{
+	Inventory.PickupMessage "Arcane... cocaine? COOCAAAAAIIIIIIIINE!"
+}
+
+actor PrisonerGrenadeMissile : Grenade replaces Rocket
+{
+	Obituary "%o got a face full of prisoner from %k."
+	Gravity 0.4
+	SeeSound "badass/diehi"
+	States {
+		Spawn:
+			PLAY N 1 Bright
+			Loop
+	}
+}
+
+actor PolaricPunch : Fist
+{
+	States {
+		Fire:
+			TNT1 A 0 A_JumpIfInventory("PowerStrength", 1, "CrackFire")
+			PUNG A 12 A_StartSound("badass/ppunch")
+			PPUN A 3
+			PPUN C 0 A_StartSound("skeleton/swing")
+			PPUN C 4 A_CustomPunch(25, false, 0, "", 200, 0, 0, "", "weapon/punch")
+			PPUN C 3
+			PPUN A 3
+			Goto Ready
+		CrackFire:
+			PUNG B 2 A_StartSound("badass/ppunch")
+			PPUN C 0 A_StartSound("skeleton/swing")
+			PPUN C 4 A_CustomPunch(250, false, 0, "", 200, 0, 0, "", "weapon/punch")
+			PPUN B 2
+			PPUN A 2
+			Goto Ready
+
+	}	
+}
+actor NutGrinder : Chainsaw replaces Chainsaw
+{
+	Inventory.PickupMessage "Got the Nut Grinder! Time for some serious legumage!"
+}
+actor SingleBullet : Pistol replaces Pistol
+{
+	Inventory.PickupMessage "Got a pile of bullets! Who needs a gun anyway?"
+	Obituary "%o was given a hand-bullet by %k."
+	Tag "Single Bullet"
+	States {
+		Ready:
+			PUNB A 1 A_WeaponReady
+			Loop
+		Select:
+			PUNB A 1 A_Raise
+			Loop
+		Deselect:
+			PUNB A 1 A_Lower
+			Loop
+		Fire:
+			PUNB B 3
+			PUNB C 6 A_FireBullets(0.5, 1, 1, 40)
+			PUNB D 4
+			PUNB E 10
+			PUNB EEEEEE 1 A_WeaponOffset(0.0,7.5, WOF_ADD)
+			PUNB AAAAAA 1 A_WeaponOffset(0.0,-7.5, WOF_ADD)
+			Goto Ready
+	}
+}
+actor DickCockShotgun : Shotgun replaces Shotgun {
+	Inventory.PickupMessage "Got the Dick-Cock Shotgun!"
+	States {
+		Fire:
+			TNT1 A 0 A_JumpIfInventory("PowerStrength", 1, "CrackFire")
+			SHTG A 3
+			SHTG A 0 A_FireBullets(5.6, 8, 7, 5)
+			SHTG A 0 A_StartSound("weapons/shotgf")
+			SHTG A 7 A_GunFlash
+			SHTG A 3
+			SHTG A 0 A_FireBullets(100, 100, 1000, random(1,0), "BulletPuff", FBF_USEAMMO | FBF_NORANDOM)
+			SHTG A 0 A_StartSound("weapons/sshotf")
+			SHTG A 0 A_SetPitch(pitch-16)
+			SHTG A 6 A_GunFlash
+			SHTG A 0 A_FireBullets(50, 59, 500, random(1,0), "BulletPuff", FBF_USEAMMO | FBF_NORANDOM)
+			SHTG A 0 A_StartSound("weapons/sshotf")
+			SHTG A 0 A_SetPitch(pitch-8)
+			SHTG A 6 A_GunFlash
+			SHTG A 0 A_FireBullets(10, 19, 100, random(1,0), "BulletPuff", FBF_USEAMMO | FBF_NORANDOM)
+			SHTG A 0 A_StartSound("weapons/sshotf")
+			SHTG A 0 A_SetPitch(pitch-4)
+			SHTG A 6 A_GunFlash
+			SHTS ABCABCABC 4
+			SHTG C 3
+			SHTG D 6
+			SHTG C 3
+			Goto Ready
+		CrackFire:
+			SHTG A 3
+			SHTG A 0 A_FireBullets(5.6, 8, 7, 5)
+			SHTG A 0 A_StartSound("weapons/shotgf")
+			SHTG A 2 A_GunFlash
+			SHTG A 0 A_FireBullets(100, 100, 1000, random(1,0), "BulletPuff", FBF_USEAMMO | FBF_NORANDOM)
+			SHTG A 0 A_StartSound("weapons/sshotf")
+			SHTG A 0 A_SetPitch(pitch-16)
+			SHTG A 4 A_GunFlash
+			SHTG A 0 A_FireBullets(50, 59, 500, random(1,0), "BulletPuff", FBF_USEAMMO | FBF_NORANDOM)
+			SHTG A 0 A_StartSound("weapons/sshotf")
+			SHTG A 0 A_SetPitch(pitch-8)
+			SHTG A 6 A_GunFlash
+			SHTG A 0 A_FireBullets(10, 19, 100, random(1,0), "BulletPuff", FBF_USEAMMO | FBF_NORANDOM)
+			SHTG A 0 A_StartSound("weapons/sshotf")
+			SHTG A 0 A_SetPitch(pitch-4)
+			SHTG A 6 A_GunFlash
+			SHTG C 3
+			SHTG D 6
+			SHTG C 2
+			Goto Ready
+
+	}
+}
+actor GoddamnDBShotgun : SUperShotgun replaces SuperShotgun
+{
+	Inventory.PickupMessage "Got the double-goddamn-barrel shotgun!"
+	Weapon.AmmoUse 16
+	States {
+		Fire:
+			TNT1 A 0 A_JumpIfInventory("PowerStrength", 1, "CrackFire")
+			SHT2 A 0 A_FireBullets(32, 16, 320, random(1,15), "BulletPuff", FBF_USEAMMO | FBF_NORANDOM)
+			SHT2 A 0 A_StartSound("weapons/sshotf")
+			SHT2 A 0 A_SetPitch(pitch-16)
+			SHT2 A 6 A_GunFlash
+			SHT2 B 6
+			SHT2 C 6 A_OpenShotgun2
+			SHT2 CD 5
+			SHT2 E 5 A_LoadShotgun2
+			SHT2 CD 4
+			SHT2 E 4 A_LoadShotgun2
+			SHT2 CD 3
+			SHT2 E 3 A_LoadShotgun2
+			SHT2 CD 3
+			SHT2 E 3 A_LoadShotgun2
+			SHT2 CD 2
+			SHT2 E 2 A_LoadShotgun2
+			SHT2 CD 2
+			SHT2 E 2 A_LoadShotgun2
+			SHT2 CD 2
+			SHT2 E 2 A_LoadShotgun2
+			SHT2 d 5
+			SHT2 C 5
+			SHT2 B 4 A_CloseShotgun2
+			Goto Ready
+		CrackFire:
+			SHT2 A 0 A_FireBullets(32, 16, 320, random(1,15), "BulletPuff", FBF_USEAMMO | FBF_NORANDOM)
+			SHT2 A 0 A_StartSound("weapons/sshotf")
+			SHT2 A 0 A_SetPitch(pitch-16)
+			SHT2 A 6 A_GunFlash
+			SHT2 B 2
+			SHT2 C 2 A_OpenShotgun2
+			SHT2 CD 2
+			SHT2 E 2 A_LoadShotgun2
+			SHT2 CD 2
+			SHT2 E 2 A_LoadShotgun2
+			SHT2 CD 2
+			SHT2 E 2 A_LoadShotgun2
+			SHT2 CD 2
+			SHT2 E 2 A_LoadShotgun2
+			SHT2 CD 1
+			SHT2 E 1 A_LoadShotgun2
+			SHT2 CD 1
+			SHT2 EDE 1 A_LoadShotgun2
+			SHT2 B 4 A_CloseShotgun2
+			Goto Ready
+
+	}
+}
+actor OverchargedMinigun : Chaingun replaces Chaingun
+{
+	Inventory.PickupMessage "Got the mingum! You notice some loose wires around the battery slot..."
+	Weapon.AmmoUse 25
+	States {
+		Fire:
+			TNT1 A 0 A_JumpIfInventory("PowerStrength", 1, "CrackFire")
+			CHGG AB 8
+			CHGG ABABAB 6
+			CHGG ABABAB 4
+			CHGG ABABAB 3
+			CHGG ABABABABABABABABABAB 2 A_WeaponOffset(random(-1.0,1.0), random(-1.0,1.0),WOF_ADD)
+			TNT1 A 0 A_WeaponOffset(0,0)
+			CHGG A 0 A_GunFlash
+			CHGG A 6 A_FireBullets(24,12,25,random(1,15))
+			CHGG ABABAB 3 A_Refire
+			CHGG ABABAB 4
+			CHGG ABAB 6
+			CHGG AB 8
+			Goto Ready
+		CrackFire:
+			CHGG ABABAB 4
+			CHGG ABABAB 3
+			CHGG ABABABABABABABABABAB 2 A_WeaponOffset(random(-4.0,4.0), random(-4.0,4.0),WOF_ADD)
+			TNT1 A 0 A_WeaponOffset(0,0)
+			CHGG A 0 A_GunFlash
+			CHGG A 6 A_FireBullets(24,12,25,random(1,15))
+			CHGG ABABAB 1 A_Refire
+			CHGG ABABAB 2
+			Goto Ready
+
+	}
+
+}
+actor PrisonerLauncher : RocketLauncher replaces RocketLauncher
+{
+
+}
+
+actor PrisonerGrenade : RocketLauncher
+{
+	Inventory.PickupMessage "Got the Prisoner Grenade!"
+	Weapon.AmmoGive 1
+	States {
+		Ready:
+			MNGR A 1 A_WeaponReady
+			Loop
+		Select:
+			MNGR A 1 A_Raise
+			Loop
+		Deselect:
+			MNGR A 1 A_Lower
+			Loop
+		Fire:
+			TNT1 A 0 A_JumpIfInventory("PowerStrength", 1, "CrackFire")
+			MNGR B 3
+			MNGR C 3
+			MNGR D 5
+			MNGR C 5
+			MNGR C 0 A_StartSound("skeleton/swing")
+			MNGR E 4 A_FireProjectile("PrisonerGrenadeMissile")
+			MNGR F 4
+			MNGR G 4 A_Refire
+			TNT1 A 12 A_WeaponOffset(0.0,56.0,WOF_ADD)
+			MNGR AAAAAAAA 1 A_WeaponOffset(0.0,-7.0,WOF_ADD)
+			Goto Ready
+		CrackFire:
+			MNGR B 1
+			MNGR C 1
+			MNGR D 5 A_StartSound("badass/jump")
+			MNGR C 0 A_StartSound("skeleton/swing")
+			MNGR E 2 A_FireProjectile("PrisonerGrenadeMissile")
+			MNGR F 2
+			MNGR G 2 A_Refire
+			TNT1 A 8 A_WeaponOffset(0.0,56.0,WOF_ADD)
+			MNGR AAAAAA 1 A_WeaponOffset(0.0,-9.5,WOF_ADD)
+			Goto Ready
+
+	}
+}
+actor PolaricTesticleCannon : PlasmaRifle replaces PlasmaRifle
+{
+	Inventory.PickupMessage "Got the Polaric Testicle Cannon!"
+}
+
+actor SFAG911 : BFG9000 replaces BFG9000
+{
+	Inventory.PickupMessage "Got the SFAG911! David William did 9/11."
+}
+
+// I am sorry for this
+actor SFAGBall : BFGBall replaces BFGBall
+{
+	States {
+		Death:
+			TNT1 A 0 A_CustomMissile("PrisonerGrenadeMissile", 0, 0, 0.0)
+			TNT1 A 0 A_CustomMissile("PrisonerGrenadeMissile", 0, 0, 15.0)
+			TNT1 A 0 A_CustomMissile("PrisonerGrenadeMissile", 0, 0, 30.0)
+			TNT1 A 0 A_CustomMissile("PrisonerGrenadeMissile", 0, 0, 45.0)
+			TNT1 A 0 A_CustomMissile("PrisonerGrenadeMissile", 0, 0, 60.0)
+			TNT1 A 0 A_CustomMissile("PrisonerGrenadeMissile", 0, 0, 75.0)
+			TNT1 A 0 A_CustomMissile("PrisonerGrenadeMissile", 0, 0, 90.0)
+			TNT1 A 0 A_CustomMissile("PrisonerGrenadeMissile", 0, 0, 105.0)
+			TNT1 A 0 A_CustomMissile("PrisonerGrenadeMissile", 0, 0, 120.0)
+			TNT1 A 0 A_CustomMissile("PrisonerGrenadeMissile", 0, 0, 135.0)
+			TNT1 A 0 A_CustomMissile("PrisonerGrenadeMissile", 0, 0, 150.0)
+			TNT1 A 0 A_CustomMissile("PrisonerGrenadeMissile", 0, 0, 165.0)
+			TNT1 A 0 A_CustomMissile("PrisonerGrenadeMissile", 0, 0, 180.0)
+			TNT1 A 0 A_CustomMissile("PrisonerGrenadeMissile", 0, 0, 195.0)
+			TNT1 A 0 A_CustomMissile("PrisonerGrenadeMissile", 0, 0, 210.0)
+			TNT1 A 0 A_CustomMissile("PrisonerGrenadeMissile", 0, 0, 225.0)
+			TNT1 A 0 A_CustomMissile("PrisonerGrenadeMissile", 0, 0, 240.0)
+			TNT1 A 0 A_CustomMissile("PrisonerGrenadeMissile", 0, 0, 255.0)
+			TNT1 A 0 A_CustomMissile("PrisonerGrenadeMissile", 0, 0, 270.0)
+			TNT1 A 0 A_CustomMissile("PrisonerGrenadeMissile", 0, 0, 285.0)
+			TNT1 A 0 A_CustomMissile("PrisonerGrenadeMissile", 0, 0, 300.0)
+			TNT1 A 0 A_CustomMissile("PrisonerGrenadeMissile", 0, 0, 315.0)
+			TNT1 A 0 A_CustomMissile("PrisonerGrenadeMissile", 0, 0, 330.0)
+			TNT1 A 0 A_CustomMissile("PrisonerGrenadeMissile", 0, 0, 345.0)
+			TNT1 AAAAAAAA 1 A_BFGSpray
+			Stop
+	}
+}
+
+actor BadassPlayer : DoomPlayer
+{
+	Player.DisplayName "Badass Prisoner"
+	Player.StartItem "SingleBullet"
+	Player.StartItem "Clip", 50
+	Player.StartItem "PrisonerGrenade"
+	Player.StartItem "RocketAmmo", 1
+	Player.StartItem "PolaricPunch"
+	Player.WeaponSlot 1, "PolaricPunch", "NutGrinder"
+	Player.WeaponSlot 2, "SingleBullet"
+	Player.WeaponSlot 3, "DickCockShotgun", "GoddamnDBShotgun"
+	Player.WeaponSlot 4, "OverchargedMinigun"
+	Player.WeaponSlot 5, "PrisonerLauncher", "PrisonerGrenade"
+	Player.WeaponSlot 6, "PolaricTesticleCannon"
+	Player.WeaponSlot 7, "SFAG911"
+}
+
+actor CorpseTosser : Cyberdemon {}
+actor TheNuker : Cyberdemon 26017 {}
+actor NukeBarrel : ExplosiveBarrel 26023 {}
+actor Sailortron : SpiderMastermind 26019 {}
+actor DriverSailor : WolfensteinSS 26020 {}
+actor FakeDeathSailor : WolfensteinSS 26021 {}
+
+actor TripminePrisoner : CustomInventory 26018
+{
+	Inventory.PickupMessage "You stepped on a tripmine prisoner."
+	States {
+		Spawn:
+			PLAY L 1 Bright A_SetScale(1.0,0.2)
+			Loop
+		Pickup:
+			TNT1 A 0 A_SpawnItemEx("Rocket")
+			Stop
+	}
+}

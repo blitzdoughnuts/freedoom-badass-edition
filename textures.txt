@@ -1,0 +1,60 @@
+sprite PPUNA0, 320, 200
+{
+	XScale 1.0
+	YScale 1.0
+	Patch PUNGB0, 88, 139 {
+		Translation "64:79=192:207"
+	}
+}
+sprite PPUNB0, 320, 200
+{
+	XScale 1.0
+	YScale 1.0
+	Patch PUNGC0, 135, 93 {
+		Translation "64:79=192:207"
+	}
+}
+sprite PPUNC0, 320, 200
+{
+	XScale 1.0
+	YScale 1.0
+	Patch PUNGD0, 148, 80 {
+		Translation "64:79=192:207"
+	}
+}
+
+sprite PUNBA0, 320, 200
+{
+	XScale 1.0
+	YScale 1.0
+	Patch SBULA0, 128, 140 {}
+	Patch BULEA0, 150, 118 {}
+}
+sprite PUNBB0, 320, 200
+{
+	XScale 1.0
+	YScale 1.0
+	Patch SBULA0, 128, 140 {}
+	Patch BULEA0, 150, 118 {}
+	Patch PUNGC0, 140, 120 {}
+}
+sprite PUNBC0, 320, 200
+{
+	XScale 1.0
+	YScale 1.0
+	Patch SBULA0, 128, 140 {}
+	Patch PUNGD0, 132, 120 {}
+}
+sprite PUNBD0, 320, 200
+{
+	XScale 1.0
+	YScale 1.0
+	Patch SBULA0, 128, 140 {}
+	Patch PUNGC0, 140, 120 {}
+}
+sprite PUNBE0, 320, 200
+{
+	XScale 1.0
+	YScale 1.0
+	Patch SBULA0, 128, 140 {}
+}

@@ -1,0 +1,58 @@
+FREEDOOM: BAD*SS EDITION CREDITS
+
+Saver310 - The Ultimate Bad*ss, hoster of project, Deutex brain surgeon
+rostuhan - Epic Bad*ss, DECORATE stuff, creator of the build system
+SmekkyBoy - HELP graphic, D_READ_M music
+blitzdoughnuts - BADASS09
+Doomkid - The very cool guy on the HELP graphic
+Freedoom - Assets and Sounds
+Freedoom Discord - Feedback
+
+Maps:
+BADASS01 - Saver310
+BADASS02 - Saver310
+BADASS03 - Saver310
+BADASS04 - Saver310
+BADASS05 - Saver310
+BADASS06 - Saver310
+BADASS07 - rostuhan
+BADASS08 - SmekkyBoy
+BADASS09 - blitzdoughnuts
+BADASS10 - rostuhan
+BADASS11 - Saver310
+BADASS12 - rostuhan
+BADASS13 - Saver310
+BADASS14 - Saver310
+BADASS15 - Saver310
+BADASS16 - rostuhan
+BADASS17 - SmekkyBoy
+BADASS18 - Saver310
+BADASS19 - Saver310
+BADASS20 - rostuhan
+BADASS21 - SmekkyBoy
+BADASS22 - Saver310
+BADASS23 - Saver310
+BADASS24 -
+BADASS25 -
+BADASS26 -
+BADASS27 -
+BADASS28 -
+BADASS29 - SmekkyBoy
+BADASS30 - Saver310
+BADASS31 - Dari
+BADASS32 - rostuhan
+
+Music:
+FC = Freedoom contributors
+D_MAP01 - FC and rostuhan
+D_READ_M - FC and SmekkyBoy
+D_SANS - FC and rostuhan
+D_BOSS - ZUN (instrument change by rostuhan)
+
+BADAGMSS CREDITS:
+
+blitzdoughnuts - ZScript rewrite, tweaks to map BADASS03, Pistol replacement's bullet, TITLEPIC
+License: CC0 (ZScript), MIT (BADASS03 and Pistol bullet), BSD3 (TITLEPIC)
+
+Freedoom project - Old Fist sprite, TITLEPIC
+License: BSD3

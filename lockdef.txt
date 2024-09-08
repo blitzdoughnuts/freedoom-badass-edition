@@ -1,0 +1,8 @@
+LOCK 420
+{
+	BlueCard
+	YellowCard
+	Message "Blue and Yellow passcards needed."
+	RemoteMessage "You need the Blue and Yellow passcards for this."
+	MapColor 255 100 100
+}

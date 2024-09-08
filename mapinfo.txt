@@ -1,0 +1,376 @@
+Episode BADASS01
+{
+	Name = "BadAGMss Mappack"
+}
+Map BADASS01 "Hydroelectronic Plant"
+{
+	LevelNum = 1
+	Next = BADASS02
+	SecretNext = BADASS02
+	Sky1 = SKY1
+	Par = 15
+	Music = D_RUNNIN
+	DeathSequence = "Deth"
+	Author = Saver310
+}
+Map BADASS02 "I eat the concrete from the sidewalk"
+{
+	LevelNum = 2
+	Next = BADASS03
+	SecretNext = BADASS03
+	Sky1 = SKY1
+	Par = 30	
+	Music = D_STALKS
+	Author = Saver310
+}
+Map BADASS03 "Geoff's Epic Maze of Death"
+{
+	LevelNum = 3
+	Next = BADASS04
+	SecretNext = BADASS04
+	Sky1 = SKY1
+	Par = 45
+	Music = D_COUNTD
+	Author = Saver310
+}
+Map BADASS04 "Geoff's Asshole"
+{
+	LevelNum = 4
+	Next = BADASS05
+	SecretNext = BADASS05
+	Sky1 = SKY1
+	Par = 15
+	Music = D_BETWEE
+	Author = Saver310
+}
+Map BADASS05 "Dave 3D 'em"
+{
+	LevelNum = 5
+	Next = BADASS06
+	SecretNext = BADASS06
+	Sky1 = SKY1
+	Par = 30
+	Music = D_DOOM
+	Author = Saver310
+	NoCrouch
+}
+Map BADASS06 "Marine Maze"
+{
+	LevelNum = 6
+	Next = BADASS07
+	SecretNext = BADASS07
+	Sky1 = SKY1
+	Par = 30
+	Music = D_THE_DA
+	Author = Saver310
+	NoJump
+	NoCrouch
+	NoFreeLook
+}
+Map BADASS07 "Atomic Attack" 
+{
+	LevelNum = 7
+	Next = BADASS08
+	SecretNext = BADASS08
+	Sky1 = SKY1
+	Par = 60
+	Music = D_SHAWN
+	Author = rostuhan
+}
+Map BADASS08 "FUCKING TOILET"
+{
+	LevelNum = 8
+	Next = BADASS09
+	SecretNext = BADASS09
+	Sky1 = SKY1
+	Par = 3
+	Music = D_DDTBLU
+	Author = SmekkyBoy
+}
+Map BADASS09 "Open World Bad*ssery" 
+{
+	LevelNum = 9
+	Next = BADASS10
+	SecretNext = BADASS10
+	Sky1 = SKY1
+	Par = 35
+	Music = D_IN_CIT
+	Author = blitzdoughnuts
+}
+Map BADASS10 "The Servants of David William"
+{
+	LevelNum = 10
+	Next = BADASS11
+	SecretNext = BADASS11
+	Sky1 = FIREWALA
+	Par = 30
+	Music = D_READ_M
+	Author = rostuhan
+}
+Map BADASS11 "Light at the End of AGM's Tunnel"
+{
+	LevelNum = 11
+	Next = BADASS12
+	SecretNext = BADASS12
+	Sky1 = SKY1
+	Par = 10
+	Music = D_STLKS2
+	Author = Saver310
+}
+Map BADASS12 "Mission \"Ancient Troll\""
+{
+	LevelNum = 12
+	Next = BADASS13
+	SecretNext = BADASS13
+	Sky1 = SKY3
+	Music = D_READ_M
+	Par = 120
+	Author = rostuhan
+}
+Map BADASS13 "Sailors of the Stars"
+{
+	LevelNum = 13
+	Next = BADASS14
+	SecretNext = BADASS14
+	Sky1 = SKY2
+	Music = D_DOOM2
+	Par = 25
+	Author = Saver310
+}
+Map BADASS14 "Bad*ss Minesweeper"
+{
+	LevelNum = 14
+	Next = BADASS15
+	SecretNext = BADASS15
+	Sky1 = SKY2
+	Music = D_EVIL
+	Author = Saver310
+	NoInfighting
+	RandomPlayerStarts
+}
+Map BADASS15 "Blood Filled Subway"
+{
+	LevelNum = 15
+	Next = BADASS16
+	SecretNext = BADASS31
+	Sky1 = SKY2
+	Music = D_STARS
+	Par = 70
+	Author = Saver310
+	ClipMidTextures
+}
+Map BADASS16 "I drink nukage" {
+	LevelNum = 16
+	Next = BADASS17
+	SecretNext = BADASS17
+	Sky1 = HELP
+	Music = D_READ_M
+	Par = 150
+	Author = rostuhan
+}
+Map BADASS17 "Smekky's Bad*ss City"
+{
+	LevelNum = 17
+	Next = BADASS18
+	SecretNext = BADASS18
+	Sky1 = SKY2
+	Music = D_STLKS3
+	Par = 30
+	Author = SmekkyBoy
+	AllowJump
+}
+Map BADASS18 "Bydgoszcz (Hell)"
+{
+	LevelNum = 18
+	Next = BADASS19
+	SecretNext = BADASS19
+	Sky1 = SKY2
+	Sky2 = SKY3
+	Music = D_ROMERO
+	Par = 60
+	Author = Saver310
+}
+Map BADASS19 "A Factory That Makes Stuff"
+{
+	LevelNum = 19
+	Next = BADASS20
+	SecretNext = BADASS20
+	Sky1 = SKY3
+	Music = D_SHAWN2
+	Par = 30
+	Author = Saver310
+}
+Map BADASS20 "Rogue-Like" {
+	LevelNum = 20
+	Next = BADASS21
+	SecretNext = BADASS21
+	Sky1 = SKY3
+	Music = D_SANS
+	Par = 300
+	Author = rostuhan
+}
+Map BADASS21 "Nacht Der Un Badass"
+{
+	LevelNum = 21
+	Next = BADASS22
+	SecretNext = BADASS22
+	Sky1 = SKY3
+	Music = D_COUNT2
+	Author = SmekkyBoy
+}
+Map BADASS22 "Non-Vehicular Duendeslaughter"
+{
+	LevelNum = 22
+	Next = BADASS23
+	SecretNext = BADASS23
+	Sky1 = SKY3
+	Music = D_DDTBL3
+	Par = 30
+	Author = Saver310
+}
+Map BADASS23 "Destroy the Machine of Death!!! (Worst Level)"
+{
+	LevelNum = 23
+	Next = BADASS24
+	SecretNext = BADASS24
+	Sky1 = SKY3
+	Music = D_AMPIE
+	Par = 2
+	Author = Saver310
+}
+Map BADASS30 "Jaws of Jaws of Jaws of Jaws of Jaws of Jaws of Jaws of Jaws of Jaws of Jaws of Jaws of Jaws of Jaws of Jaws of Jaws of IT'S ALL GODDAMN JAWS"
+{
+	LevelNum = 30
+	Next = endsequence,TheBadassEnd
+	Sky1 = SKY3
+	Music = D_OPENIN
+	Par = 45
+	Author = blitzdoughnuts
+}
+
+Intermission Deth
+{
+	TextScreen
+	{
+		Background = "DEATHPIC"
+		Text = "You fucked up"
+	}
+}
+Intermission TheBadassEnd
+{
+	TextScreen
+	{
+		Background = "FLOOR0_1", 1
+		Text = "After pumping a shit ton of plasma testicles",
+			   "into the jaw the jaw dies.\n        \n        \n        \n        woohoo"
+	}
+	Link = TheBadassCast
+}
+Intermission TheBadassCast
+{
+	Cast
+	{
+		Background = "FLOOR0_1", 1
+		Music = "D_EVIL"
+		CastClass = "ZombieCast"
+		CastName = "Zombie"
+		AttackSound = "Missile", 1, "grunt/attack"
+	}
+	Cast
+	{
+		CastClass = "TheNukerCast"
+		CastName = "The Nuker"
+		AttackSound = "Missile", 1, "Sraka"
+	}
+	Cast
+	{
+		CastClass = "ZombiemanCast"
+		CastName = "Worker Zombie"
+		AttackSound = "Missile", 1, "skeleton/swing"
+	}
+	Cast
+	{
+		CastClass = "DriverSailorCast"
+		CastName = "Tough Sailor"
+		AttackSound = "Missile", 1, "wolfss/attack"
+	}
+	Cast
+	{
+		CastClass = "DoomPlayerCast"
+		CastName = "Badass of Humanity"
+		AttackSound = "Missile", 1, "weapon/sshotf"
+	}
+
+	Link = TheBadassCast
+}
+ClearSkills
+Skill Baby
+{
+	AutoUseHealth
+	AmmoFactor = 2
+	DamageFactor = 0.5
+	EasyBossBrain
+	SpawnFilter = Baby
+	Name = "I'm Ass"
+}
+Skill Easy
+{
+	EasyBossBrain
+	SpawnFilter = Easy
+	Name = "I'm Bad"
+}
+Skill Normal
+{
+	SpawnFilter = Normal
+	Name = "I'm Badass"
+	DefaultSkill
+}
+Skill Hard
+{
+	SpawnFilter = Hard
+	Name = "I'm Bad*ss"
+}
+Skill Nightmare
+{
+	AmmoFactor = 2
+	FastMonsters
+	InstantReaction
+	DisableCheats
+	RespawnTime = 12
+	SpawnFilter = Nightmare
+	Name = "Erectile Disfunction"
+	MustConfirm
+}
+Skill Erect
+{
+	AmmoFactor = 2
+	FastMonsters
+	DisableCheats
+	NoPain
+	NoInfighting
+	MonsterHealth = 2
+	HealthFactor = 2
+	KickbackFactor = 4
+	DamageFactor = 2
+	SpawnFilter = Nightmare
+	Name = "Kidney Moonstones"
+	MustConfirm = "David William does not approve of this difficulty.\nDo you want to continue?"
+}
+Skill Impossible
+{
+	FastMonsters
+	InstantReaction
+	DisableCheats
+	NoPain
+	NoInfighting
+	MonsterHealth = 10
+	KickbackFactor = 10
+	DamageFactor = 10
+	SpawnFilter = Nightmare
+	Name = "Literally Impossible"
+	MustConfirm = "Why?"
+}
+GameInfo
+{
+   PlayerClasses = "BadassPlayer"
+}

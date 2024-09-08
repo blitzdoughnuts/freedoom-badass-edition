@@ -1,0 +1,4 @@
+//$limit weapons/rocklx 0
+
+badass/ppunch 		dsplasma
+badass/diehi		dspdiehi
