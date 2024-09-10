@@ -3,13 +3,13 @@
 One of the most **BAD\*SS** Freedoom mods on Earth. Forked from Freedoom: Badass Edition. Made for ZDoom-based source ports.
 
 Changes from upstream FDBE:
-    - No build system; you just run the mod directory as if it were a .wad
-    - All non-free material removed, so the mod is now properly FOSS
-    - Rewritten Decorate code, mainly to reduce wasteful code
-    - DB Shotgun sprites are included in the mod, so the weapon can be used in Phase 1
-    - The Polaric Energy Cannon is now a Polaric Energy Blaster that fires several projectiles at once, quite fast too.
-    - The SKAG 1337 is now the SFAG 911. It's the nuclear weapon, mind you.
-    - New BADASS30
+- No build system; you just run the mod directory as if it were a .wad
+- All non-free material removed, so the mod is now properly FOSS
+- Rewritten Decorate code, mainly to reduce wasteful code
+- DB Shotgun sprites are included in the mod, so the weapon can be used in Phase 1
+- The Polaric Energy Cannon is now a Polaric Energy Blaster that fires several projectiles at once, quite fast too.
+- The SKAG 1337 is now the SFAG 911. It's the nuclear weapon, mind you.
+- New BADASS30
 
 ## FAQ
 

@@ -209,7 +209,7 @@ Map BADASS20 "Rogue-Like" {
 	Par = 300
 	Author = rostuhan
 }
-Map BADASS21 "Nacht Der Un Badass"
+Map BADASS21 "Bunker Down"
 {
 	LevelNum = 21
 	Next = BADASS22
@@ -261,8 +261,8 @@ Intermission TheBadassEnd
 	TextScreen
 	{
 		Background = "FLOOR0_1", 1
-		Text = "After pumping a shit ton of plasma testicles",
-			   "into the jaw the jaw dies.\n        \n        \n        \n        woohoo"
+		Text = "After pumping a shit ton of shit into the",
+			   "jaw, the jaw dies.\n        \n        \n        \n        \n           \nwoohoo"
 	}
 	Link = TheBadassCast
 }
@@ -293,12 +293,6 @@ Intermission TheBadassCast
 		CastClass = "DriverSailorCast"
 		CastName = "Tough Sailor"
 		AttackSound = "Missile", 1, "wolfss/attack"
-	}
-	Cast
-	{
-		CastClass = "DoomPlayerCast"
-		CastName = "Badass of Humanity"
-		AttackSound = "Missile", 1, "weapon/sshotf"
 	}
 
 	Link = TheBadassCast
@@ -338,13 +332,14 @@ Skill Nightmare
 	DisableCheats
 	RespawnTime = 12
 	SpawnFilter = Nightmare
-	Name = "Erectile Disfunction"
+	Name = "I'm Dead*ss"
 	MustConfirm
 }
 Skill Erect
 {
 	AmmoFactor = 2
 	FastMonsters
+	InstantReaction
 	DisableCheats
 	NoPain
 	NoInfighting
@@ -353,7 +348,7 @@ Skill Erect
 	KickbackFactor = 4
 	DamageFactor = 2
 	SpawnFilter = Nightmare
-	Name = "Kidney Moonstones"
+	Name = "Erectile Disfunction"
 	MustConfirm = "David William does not approve of this difficulty.\nDo you want to continue?"
 }
 Skill Impossible
@@ -365,9 +360,9 @@ Skill Impossible
 	NoInfighting
 	MonsterHealth = 10
 	KickbackFactor = 10
-	DamageFactor = 10
+	DamageFactor = 4
 	SpawnFilter = Nightmare
-	Name = "Literally Impossible"
+	Name = "Kidney Moonstones"
 	MustConfirm = "Why?"
 }
 GameInfo
